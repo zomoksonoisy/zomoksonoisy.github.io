@@ -1,6 +1,6 @@
 # hehe
 test
-<p><a href="gigs.html">🎤 Live Gigs</a></p>
+<p><a href="gigs.html">Live Gigs</a></p>
 </head>
 
 
