@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      height: 100vh;
+      width: 200px;
+      background-color: #fce4ec; /* light pink */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #000;
+      padding: 10px 0;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      color: #e91e63;
+    }
+
+    /* Main content */
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+      background: url("https://wallpapercave.com/wp/wp4676580.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="index.html">home</a>
+    <a href="opuses.html">opuses</a>
+    <a href="profile.html">profile</a>
+    <a href="live.html">live</a>
+    <a href="dont.html">don't</a>
+  </div>
+
+  <!-- Content -->
+  <div class="main-content">
+    <h1>Welcome!</h1>
+    <p>This is where your content goes.</p>
+  </div>
+</body>
+</html>
