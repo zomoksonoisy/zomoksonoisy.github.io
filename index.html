@@ -3,44 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page</title>
+  <title>My Website</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
     }
+    /* Sidebar */
     .sidebar {
       width: 200px;
-      background: #333;
-      color: #fff;
-      height: 100vh;
+      background: #fce4ec; /* light pink */
       padding: 20px;
-      position: fixed;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     }
     .sidebar a {
-      color: white;
-      text-decoration: none;
       display: block;
       margin: 10px 0;
+      text-decoration: none;
+      color: #333;
     }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    /* Main content */
     .content {
-      margin-left: 220px;
+      flex-grow: 1;
       padding: 20px;
-      flex: 1;
+      background: url('your-background.jpg') no-repeat center center;
+      background-size: cover;
     }
   </style>
 </head>
 <body>
   <div class="sidebar">
-    <h2>Menu</h2>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+    <a href="index.html">home</a>
+    <a href="opuses.html">opuses</a>
+    <a href="profile.html">profile</a>
+    <a href="gigs.html">gigs</a>
+    <a href="dont.html">don't</a>
   </div>
+
   <div class="content">
-    <h1>Welcome to My Page</h1>
-    <p>This is the main content area.</p>
+    <h1>Welcome to My Website</h1>
+    <p>This is the main page.</p>
   </div>
 </body>
 </html>
